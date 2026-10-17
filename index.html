@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>By Mansur — ресейл одежды</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav__header">
+    <a class="nav__logo" href="#top">By Mansur</a>
+    <button class="nav__menu" id="menuBtn" aria-label="Меню" aria-expanded="false">☰</button>
+  </div>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#new" class="nav-link">Новое</a></li>
+    <li><a href="#hoodies" class="nav-link">Худи</a></li>
+    <li><a href="#jeans" class="nav-link">Джинсы</a></li>
+    <li><a href="#footwear" class="nav-link">Обувь</a></li>
+    <li><a href="#sale" class="nav-link">Скидки</a></li>
+    <li><a class="btn" href="https://www.instagram.com/mnsureee/" target="_blank" rel="noopener">Instagram</a></li>
+  </ul>
+</nav>
+
+<header id="top">
+  <div class="wrap header__container">
+    <div class="header__content">
+      <h1><span>Лучшая</span><br>Реселл<br><span>Площадка</span><br>В Кейджи</h1>
+      <p>by Mansur, 2026</p>
+      <div class="header__btns"><a class="btn" href="#new">Смотреть каталог</a></div>
+    </div>
+    <div class="header__image"><img src="img/hero.png" alt="By Mansur"></div>
+  </div>
+</header>
+
+<main id="catalog"></main>
+
+<section class="promo">
+  <div class="wrap promo__container">
+    <h2 class="title">Не нашли свой размер или нужную вещь?</h2>
+    <p>Пишите нам в Instagram: подскажем по наличию, размеру и доставке.</p>
+    <a class="btn btn--light" href="https://www.instagram.com/mnsureee/" target="_blank" rel="noopener">Написать @mnsureee</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer__container">
+    <div class="footer__col">
+      <div class="footer__logo">By Mansur</div>
+      <p>Дополните свой стиль оригинальной одеждой от нас!</p>
+      <a class="footer__social" href="https://www.instagram.com/mnsureee/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+    </div>
+    <div class="footer__col">
+      <h4>Каталог</h4>
+      <ul class="footer__links">
+        <li><a href="#new">Новое поступление</a></li>
+        <li><a href="#hoodies">Худи и свитшоты</a></li>
+        <li><a href="#jeans">Джинсы</a></li>
+        <li><a href="#footwear">Обувь</a></li>
+        <li><a href="#sale">Скидки</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Связь</h4>
+      <ul class="footer__links">
+        <li><a href="https://www.instagram.com/mnsureee/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><span>Доставка по договорённости</span></li>
+        <li><span>Оригинал, проверка перед отправкой</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bar">Copyright © 2026 By Mansur. All rights reserved.</div>
+</footer>
+
+<dialog id="pd" aria-label="Товар"></dialog>
+
+<dialog id="od">
+  <button class="x" id="ox" aria-label="Закрыть">×</button>
+  <form class="form" id="of">
+    <h2>Оформить заказ</h2>
+    <div id="osum" class="form__sum"></div>
+    <label>Имя<input name="name" required maxlength="60"></label>
+    <label>Как с вами связаться<input name="contact" required maxlength="80" placeholder="@telegram, инстаграм или телефон"></label>
+    <label>Город и адрес доставки<input name="addr" maxlength="200"></label>
+    <input name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+    <button class="btn" type="submit" id="osub">Отправить заказ</button>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
